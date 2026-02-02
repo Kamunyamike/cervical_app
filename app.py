@@ -2,6 +2,10 @@ import streamlit as st
 import gdown
 import os
 import torch
+import pages.classifier as classifier
+import pages.research as research
+import pages.about as about
+
 # --- Google Drive Download ---
 # File ID from my link: https://drive.google.com/file/d/1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a/view?usp=sharing
 file_id = "1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a"
@@ -25,16 +29,12 @@ if page == "Home":
     st.write("Harness the power of AI for accurate, instant cell type detection and analysis.")
 
 elif page == "Classifier":
-    # You can import or call classifier logic here
-    import pages.classifier as classifier
     classifier.run()  # wrap classifier code in a run() function
 
 elif page == "About":
-    import pages.about as about
     about.run()
 
 elif page == "Research":
-    import pages.research as research
     research.run()
 # Custom CSS
 st.markdown("""
@@ -354,6 +354,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
