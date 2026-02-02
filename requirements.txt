@@ -4,3 +4,4 @@ streamlit
 pillow
 numpy
 gdown
+streamlit>=1.22
