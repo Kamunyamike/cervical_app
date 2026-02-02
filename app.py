@@ -10,9 +10,9 @@ model_path = "resnet50_cervical.pth"
 
 # Download only if not already present
 if not os.path.exists(model_path):
-    import streamlit as st
-    st.write("Downloading model weights from Google Drive...")
-    gdown.download(url, model_path, quiet=False)
+import streamlit as st
+st.write("Downloading model weights from Google Drive...")
+gdown.download(url, model_path, quiet=False)
 
 # Load model weights later in my classifier page
 # Example:
@@ -348,3 +348,4 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
