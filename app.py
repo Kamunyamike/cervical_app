@@ -17,7 +17,25 @@ if not os.path.exists(model_path):
 # Example:
 # model.load_state_dict(torch.load(model_path, map_location=device))
 st.set_page_config(page_title="Cell Classifier Home", layout="wide")
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to:", ["Home", "Classifier", "About", "Research"])
 
+if page == "Home":
+    st.title("🔬 Advanced Cervical Cell Classification")
+    st.write("Harness the power of AI for accurate, instant cell type detection and analysis.")
+
+elif page == "Classifier":
+    # You can import or call classifier logic here
+    import pages.01_classifier as classifier
+    classifier.run()  # wrap classifier code in a run() function
+
+elif page == "About":
+    import pages.02_about as about
+    about.run()
+
+elif page == "Research":
+    import pages.03_research as research
+    research.run()
 # Custom CSS
 st.markdown("""
     <style>
@@ -336,6 +354,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
