@@ -4,7 +4,7 @@ import os
 import torch
 
 # --- Google Drive Download ---
-# File ID from your link: https://drive.google.com/file/d/1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a/view?usp=sharing
+# File ID from my link: https://drive.google.com/file/d/1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a/view?usp=sharing
 file_id = "1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a"
 url = f"https://drive.google.com/uc?id={file_id}"
 model_path = "resnet50_cervical.pth"
@@ -15,7 +15,7 @@ if not os.path.exists(model_path):
     st.write("Downloading model weights from Google Drive...")
     gdown.download(url, model_path, quiet=False)
 
-# Load model weights later in your classifier page
+# Load model weights later in my classifier page
 # Example:
 # model.load_state_dict(torch.load(model_path, map_location=device))
 
@@ -351,3 +351,4 @@ st.markdown("""
     </div>
 
     """, unsafe_allow_html=True)
+
