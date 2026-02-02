@@ -34,7 +34,7 @@ elif page == "About":
     about.run()
 
 elif page == "Research":
-    import pages.03_research as research
+    import pages.research as research
     research.run()
 # Custom CSS
 st.markdown("""
@@ -354,6 +354,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
