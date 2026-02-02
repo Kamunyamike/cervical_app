@@ -23,15 +23,6 @@ page = st.sidebar.radio("Go to:", ["Home", "Classifier", "About", "Research"])
 if page == "Home":
     st.title("🔬 Advanced Cervical Cell Classification")
     st.write("Harness the power of AI for accurate, instant cell type detection and analysis.")
-
-elif page == "Classifier":
-    classifier.run()  # wrap classifier code in a run() function
-
-elif page == "About":
-    about.run()
-
-elif page == "Research":
-    research.run()
 # Custom CSS
 st.markdown("""
     <style>
@@ -350,6 +341,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
