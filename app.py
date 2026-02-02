@@ -2,10 +2,6 @@ import streamlit as st
 import gdown
 import os
 import torch
-import pages.classifier as classifier
-import pages.research as research
-import pages.about as about
-
 # --- Google Drive Download ---
 # File ID from my link: https://drive.google.com/file/d/1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a/view?usp=sharing
 file_id = "1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a"
@@ -354,6 +350,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
