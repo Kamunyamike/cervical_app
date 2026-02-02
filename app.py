@@ -30,7 +30,7 @@ elif page == "Classifier":
     classifier.run()  # wrap classifier code in a run() function
 
 elif page == "About":
-    import pages.02_about as about
+    import pages.about as about
     about.run()
 
 elif page == "Research":
@@ -354,6 +354,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
