@@ -204,12 +204,6 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# Start Analysis Button
-col1, col2, col3 = st.columns([1, 1, 1])
-with col2:
-    if st.button("Start Analysis", use_container_width=True, key="hero_cta"):
-        st.switch_page("pages/01_classifier.py")
-
 st.markdown("""
     <div class="feature-section">
         <h2 style="text-align: center; color: #0f1b3c; font-size: 2rem; margin-bottom: 3rem;">Why Choose Cell Classifier?</h2>
@@ -329,11 +323,6 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([1, 1, 1])
-with col2:
-    if st.button("Go to Classifier →", use_container_width=True, key="cta_button"):
-        st.switch_page("pages/01_classifier.py")
-
 # Footer
 st.markdown("---")
 st.markdown("""
@@ -348,4 +337,5 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
