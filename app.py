@@ -10,15 +10,24 @@ model_path = "resnet50_cervical.pth"
 
 # Download only if not already present
 if not os.path.exists(model_path):
-    import streamlit as st
-    st.write("Downloading model weights from Google Drive...")
-    gdown.download(url, model_path, quiet=False)
-
+import streamlit as st
+st.write("Downloading model weights from Google Drive...")
+gdown.download(url, model_path, quiet=False)
 # Load model weights later in my classifier page
 # Example:
 # model.load_state_dict(torch.load(model_path, map_location=device))
 st.set_page_config(page_title="Cell Classifier Home", layout="wide")
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to:", ["Home", "Classifier"])
+if page == "Home":
+    st.title("🔬 Advanced Cervical Cell Classification")
+    st.write("Harness the power of AI for accurate, instant cell type detection and analysis.")
+    # ... your landing page content here ...
 
+elif page == "Classifier":
+    # Import or call your classifier page code directly
+    import pages.01_classifier as classifier
+    classifier.run()  # assuming you wrap classifier logic in a run() function
 # Custom CSS
 st.markdown("""
     <style>
@@ -348,3 +357,4 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
