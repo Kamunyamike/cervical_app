@@ -2,7 +2,6 @@ import streamlit as st
 import gdown
 import os
 import torch
-
 # --- Google Drive Download ---
 # File ID from my link: https://drive.google.com/file/d/1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a/view?usp=sharing
 file_id = "1jp68mVPNu0aBfJEB746NGIDU5pe5jY1a"
@@ -209,7 +208,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
     if st.button("🚀 Start Analysis", use_container_width=True, key="hero_cta"):
-        st.switch_page("cervical_app/01_classifier.py")
+        st.switch_page("pages/01_classifier.py")
 
 st.markdown("""
     <div class="feature-section">
@@ -333,7 +332,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
     if st.button("Go to Classifier →", use_container_width=True, key="cta_button"):
-        st.switch_page("cervical_app/01_classifier.py")
+        st.switch_page("pages/01_classifier.py")
 
 # Footer
 st.markdown("---")
@@ -349,4 +348,3 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
-
