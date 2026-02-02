@@ -18,7 +18,6 @@ if not os.path.exists(model_path):
 # Load model weights later in my classifier page
 # Example:
 # model.load_state_dict(torch.load(model_path, map_location=device))
-
 st.set_page_config(page_title="Cell Classifier Home", layout="wide")
 
 # Custom CSS
@@ -209,7 +208,7 @@ st.markdown("""
 # Start Analysis Button
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
-    if st.button("Start Classification"):
+    if st.button("🚀 Start Analysis", use_container_width=True, key="hero_cta"):
         st.switch_page("pages/01_classifier.py")
 
 st.markdown("""
@@ -333,7 +332,7 @@ st.markdown("""
 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
-    if st.button("Start Classification"):
+    if st.button("Go to Classifier →", use_container_width=True, key="cta_button"):
         st.switch_page("pages/01_classifier.py")
 
 # Footer
@@ -349,7 +348,4 @@ st.markdown("""
             </p>
         </div>
     </div>
-
     """, unsafe_allow_html=True)
-
-
