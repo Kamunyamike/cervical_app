@@ -207,7 +207,7 @@ st.markdown("""
 # Start Analysis Button
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
-    if st.button("🚀 Start Analysis", use_container_width=True, key="hero_cta"):
+    if st.button("Start Analysis", use_container_width=True, key="hero_cta"):
         st.switch_page("pages/01_classifier.py")
 
 st.markdown("""
@@ -220,7 +220,7 @@ st.markdown("""
                 <p>Get instant analysis results within seconds using GPU-accelerated deep learning inference</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎯</div>
+                <div class="feature-icon">🔒</div>
                 <h3>Highly Accurate</h3>
                 <p>ResNet50 architecture delivers state-of-the-art accuracy in cell classification</p>
             </div>
