@@ -209,7 +209,7 @@ st.markdown("""
 # Start Analysis Button
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
-    if st.button("🚀 Start Analysis", use_container_width=True, key="hero_cta"):
+    if st.button("Start Classification"):
         st.switch_page("pages/01_classifier.py")
 
 st.markdown("""
@@ -333,7 +333,7 @@ st.markdown("""
 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
-    if st.button("Go to Classifier →", use_container_width=True, key="cta_button"):
+    if st.button("Start Classification"):
         st.switch_page("pages/01_classifier.py")
 
 # Footer
@@ -351,4 +351,5 @@ st.markdown("""
     </div>
 
     """, unsafe_allow_html=True)
+
 
