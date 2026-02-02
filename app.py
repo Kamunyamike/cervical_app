@@ -26,7 +26,7 @@ if page == "Home":
 
 elif page == "Classifier":
     # You can import or call classifier logic here
-    import pages.01_classifier as classifier
+    import pages.classifier as classifier
     classifier.run()  # wrap classifier code in a run() function
 
 elif page == "About":
@@ -354,6 +354,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
